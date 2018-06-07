@@ -1,0 +1,14 @@
+[cxx]
+  default_platform = iphonesimulator-x86_64
+  cflags = -g -fmodules -fobjc-arc -D BUCK -w
+  combined_preprocess_and_compile = true
+
+[alias]
+  my-app = //:TestBuck
+
+[project]
+  ide = xcode
+  ignore = \
+    .git, \
+    .hg, \
+    .buckd
